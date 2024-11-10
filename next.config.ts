@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   experimental: {
     cssChunking: "loose", // default
+    ppr: "incremental",
   },
   images: {
     localPatterns: [
@@ -17,10 +18,9 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: '**.example.com',
-        port: '',
-        pathname:'/image/upload/**',
-
+        hostname: "**.example.com",
+        port: "",
+        pathname: "/image/upload/**",
       },
     ],
   },
